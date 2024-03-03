@@ -1,0 +1,15 @@
+Maven - It is a build automation tool primarily used for java projects. It is used for managing java project
+        dependencies, building, testing, packaging, and deploying java based applications. Maven uses Project
+        object Model file to describe the project configurations and dependencies.
+
+Maven has three phases:
+    |                                                   |   Pre Clean - Hook before Cleaning
+    | Clean : Removes temporary directory and file      |   Clean - Does the actual cleaning
+    |                                                   |   Post Clean - Hook after cleaning
+
+    |           | compile - Compiles your code to byte code
+    |           | test - Runs unit test
+    | Default : Where the most useful goal live. * Maven default phase is lifecycle. Compile before test, test before package,verify
+    |           | package - creates a jar or war file
+    |           | verify - Runs and checks integration tests
+

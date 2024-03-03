@@ -1,0 +1,17 @@
+#--> ./mvnw clean
+    clears the target folder. Target directory is where maven puts all of it's process, artifacts and everything
+
+#--> ./mvnw compile
+    This command will use the Maven Wrapper (./mvnw) to compile the source code of the project.
+
+#--> ./mvnw test
+    This command will use the Maven Wrapper (./mvnw) to execute the tests defined in the project.
+
+#--> ./mvnw package
+    Will generate the jar files. This command will use the Maven Wrapper to package the project according to the
+    configuration specified in the pom.xml file.
+
+#--> ./mvnw verify
+    This command runs Maven's verify phase, executing compilation, running tests, and performing additional checks
+    specified in the project configuration, using the Maven Wrapper (./mvnw).
+
