@@ -15,3 +15,15 @@
     This command runs Maven's verify phase, executing compilation, running tests, and performing additional checks
     specified in the project configuration, using the Maven Wrapper (./mvnw).
 
+# --> ./mvnw clean package
+    Typically used to clean package when we want to build our project and generate an artifact without running
+    the integration tests. This gives us a jar file, which we can then run using the below command and test the code
+
+# Navigate to directory where it is created and then execute command -->
+    java -jar <name of jar file>
+    to stop execution press "ctrl+C"
+
+
+# --> ./mvnw clean verify
+    Use clean verify for more comprehensive testing and validation, including running integration tests,
+    before deploying or releasing our project.
