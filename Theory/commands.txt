@@ -27,3 +27,17 @@
 # --> ./mvnw clean verify
     Use clean verify for more comprehensive testing and validation, including running integration tests,
     before deploying or releasing our project.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+Running the springboot application from command line via maven, via springboot maven plugin
+
+# -->  ./mvnw spring-boot:run
+    :)is used to run a Spring Boot application using Maven's Maven Wrapper.
+    :)spring-boot:run: This is a Maven command that tells Maven to execute the Spring Boot plugin's run goal.
+        The spring-boot:run goal starts your Spring Boot application.
+
+
+

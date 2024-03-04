@@ -1,0 +1,48 @@
+Spring App Layers
+
+Every layer has a specific purpose and is there to solve a specific problem
+
+
+Layer 3 -  Persistance Layer
+
+    The persistence layer is a part of a software system responsible for storing and retrieving data from a data store,
+    typically database. It encapsulates the logic required to interact with the database, including reading and writing
+    data, querying, and managing transactions. In Java applications, the persistence layer is often implemented using
+    technologies such as JDBC (Java Database Connectivity), JPA (Java Persistence API), or other ORM
+    (Object-Relational Mapping) frameworks like Hibernate.
+The persistence layer is responsible for managing interactions with the database. We utilize entities to
+communicate with the database using a couple of different patterns:
+
+    1.Repository Pattern: This pattern provides functionality for CRUD operations (Create, Read, Update, Delete).
+        It encapsulates database operations within well-defined interfaces.
+
+    2.Data Access Objects (DAOs): DAOs also facilitate CRUD operations. They abstract away the specifics of database
+        interactions and provide a clean interface for accessing data.
+
+The primary goal of this layer is to handle all interactions with databases and expose them through clearly
+defined interfaces.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Layer 2 - Service Layer
+    The service layer acts as an intermediary between the presentation layer (user interface) and the persistence layer
+    (database interaction). It encapsulates the business logic of an application, orchestrating the flow of data and
+    operations within the system. The service layer typically contains various services, each responsible for specific
+    tasks or operations.
+
+Goal:Use all the Functionality exposed by persistance layer and the use it to meet the requirements that are application
+    is being built to handle. This done through set of interfaces and they are implementing classes. Calls from
+    presentation layer to persistance layer must go through Service layer.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Layer 1 - Presentation Layer
+
+    The presentation layer serves as the interface between users and the underlying system, providing a means for users
+    to interact with and consume the application's functionality. It encompasses the user interface (UI) components and
+    logic responsible for rendering data, capturing user input, and facilitating communication with the application's
+    backend services.
+
+Goal: Take the data which comes as a result of using service layer and expose that to user and typically it is done via
+    Rest API or graphql or websockets or any different api. If we want to present our data in different way we
+    wouldn't need to make any changes to service layer.

@@ -1,0 +1,16 @@
+What is a Framework? - Chunk of code that sits on top of a language's core library to solve the common problem
+ Common problems can be things like connecting to database or exposing restapi so that different systems can communicate
+
+ For Solving such issue we have spring framework
+
+ Spring Framework - does things like connecting to database or exposing restapi etc.
+ Spring Boot  is a layer built on top of spring framework. The function of layer is to provide an additional
+ functionality to solve a specific problem
+
+ Spring Framework is highly configurable but at the cost that it takes lot of effort to do it. So you can do everything
+ by yourself, configure and deploy
+
+ But if you use spring boot it is going to do lot of work for you using conventions and these conventions are
+ documented which speeds up the application development
+
+
