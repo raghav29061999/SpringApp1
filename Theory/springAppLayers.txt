@@ -46,3 +46,6 @@ Layer 1 - Presentation Layer
 Goal: Take the data which comes as a result of using service layer and expose that to user and typically it is done via
     Rest API or graphql or websockets or any different api. If we want to present our data in different way we
     wouldn't need to make any changes to service layer.
+-----------------------------------------------------------------------------------------------------------------------
+
+GPT link -  https://chat.openai.com/share/3b5fe934-25d3-4212-b1c6-c0933b313eef

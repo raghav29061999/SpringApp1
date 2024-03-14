@@ -14,3 +14,25 @@ What is a Framework? - Chunk of code that sits on top of a language's core libra
  documented which speeds up the application development
 
 
+----------------------------Using Spring Framework directly:
+
+When using Spring Framework directly to interact with a database in Java, you need to manage several dependencies in
+your project's POM (Project Object Model).
+Additionally, you'll have to create beans, particularly for entity management, which involves defining configuration and
+mapping between Java objects and database tables.
+This process can be cumbersome and involves a lot of manual configuration and setup before you can start writing the
+actual logic code for your application.
+
+
+------------------Using Spring Boot:
+
+In contrast, with Spring Boot, the process is much simpler and more streamlined.
+You only need to include the necessary dependencies for database interaction, typically by adding them to your project's
+configuration file (such as the pom.xml in Maven).
+Then, you can configure your database connection and other properties in a .properties file or similar configuration
+file.
+Spring Boot automatically handles the creation of necessary beans, including entity management, based on the provided
+configuration.
+This significantly reduces the setup overhead, allowing you to focus more on writing the actual logic code for your
+application without getting bogged down by configuration details.
+
