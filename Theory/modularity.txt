@@ -1,0 +1,32 @@
+Modularity - refers to the ability to divide your application into smaller, self-contained modules or components.
+These modules can be developed, tested, and maintained independently, making it easier to manage large and complex
+applications.
+------------------------------------------------------------------------------------------------------------------------
+Inversion of Control :
+
+Problem Statement: You have a class that depends on three other classes to achieve its functionality.
+
+Traditional Approach: Initially, you might create instances of these dependent classes inside your original class using
+    the new keyword. However, this tightly couples your class with its dependencies, making it difficult to change them
+    later without modifying the original class.
+
+Improved Approach: Instead of creating instances directly within the original class, you declare interfaces for these
+    dependencies. This allows your class to interact with these dependencies through their interfaces rather than
+    specific implementations.
+
+Introduction of a Framework: To provide concrete implementations of these dependencies, you introduce a framework that
+    handles the creation and injection of these dependencies. This framework follows the principle of dependency
+    injection, where it injects the dependencies into your class at runtime.
+
+Inversion of Control (IoC): By introducing the framework and allowing it to manage the creation and injection of
+    dependencies, the control over the instantiation and management of these dependencies shifts from your original
+    class to the framework. This shift of control is termed as Inversion of Control (IoC).
+
+Benefits of IoC: With IoC, your original class becomes more flexible and loosely coupled with its dependencies. If you
+    need to change or replace a dependency, you can do so without modifying the original class. The framework handles
+    the instantiation and injection of the new dependency, promoting better maintainability and extensibility of your
+    codebase.
+
+
+Dependency Injection -
+
