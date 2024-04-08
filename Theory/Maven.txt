@@ -13,3 +13,10 @@ Maven has three phases:
     |           | package - creates a jar or war file
     |           | verify - Runs and checks integration tests
 
+    |
+    |
+    | site : Where documentation is generated
+    |
+    |
+
+
