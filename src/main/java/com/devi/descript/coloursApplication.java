@@ -11,6 +11,12 @@ import com.devi.descript.services.ColourPrinter;
 @SpringBootApplication
 @Log
 public class coloursApplication implements CommandLineRunner {
+
+    private ColourPrinter colourPrinter;
+
+    public coloursApplication(ColourPrinter colourPrinter){
+        this.colourPrinter = colourPrinter;
+    }
     public static void main(String[] args) {
         SpringApplication.run(coloursApplication.class,args);
 
@@ -18,7 +24,7 @@ public class coloursApplication implements CommandLineRunner {
 
     @Override
     public void run(final String... args) {
-        final ColourPrinter colourPrinter = new ColourPrinterImpl();
+//        final ColourPrinter colourPrinter = new ColourPrinterImpl();
         log.info(colourPrinter.print());
     }
 }
