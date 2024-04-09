@@ -1,3 +1,10 @@
+Auto Configuration -  In Spring Boot, when you include dependencies in your pom.xml file and provide configurations/
+properties, Spring Boot automatically configures and creates beans based on sensible defaults and conventions. This
+feature is known as "auto-configuration" and is one of the key benefits of using Spring Boot.
+
+
+
+
 Modularity - refers to the ability to divide your application into smaller, self-contained modules or components.
 These modules can be developed, tested, and maintained independently, making it easier to manage large and complex
 applications.

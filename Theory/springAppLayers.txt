@@ -3,7 +3,7 @@ Spring App Layers
 Every layer has a specific purpose and is there to solve a specific problem
 
 
-Layer 3 -  Persistance Layer
+Layer 3 -  Persistance Layer - handle the interaction with database
 
     The persistence layer is a part of a software system responsible for storing and retrieving data from a data store,
     typically database. It encapsulates the logic required to interact with the database, including reading and writing
@@ -30,7 +30,7 @@ Layer 2 - Service Layer
     operations within the system. The service layer typically contains various services, each responsible for specific
     tasks or operations.
 
-Goal:Use all the Functionality exposed by persistance layer and the use it to meet the requirements that are application
+Goal:Use all the Functionality exposed by persistance layer and the use it to meet the requirements that our application
     is being built to handle. This done through set of interfaces and they are implementing classes. Calls from
     presentation layer to persistance layer must go through Service layer.
 
