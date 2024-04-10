@@ -48,6 +48,7 @@ public class ColourPrinterImpl implements ColourPrinter {
         this.redPrinter = redPrinter;
         this.greenPrinter = greenPrinter;
     }
+    //sd
 
 
     @Override

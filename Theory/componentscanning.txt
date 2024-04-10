@@ -1,0 +1,29 @@
+Component scanning is a process that starts when the Spring application starts up. It involves Spring scanning the
+classpath to find classes annotated with @Component or other stereotype annotations such as @Service, @Repository, or
+@Controller. These annotations indicate that the annotated classes are Spring-managed components and should be
+instantiated and managed by the Spring container.
+
+Traditionally, classes were marked as Spring components using the @Component annotation. However, in Spring Boot
+applications, the @SpringBootApplication annotation is typically used. @SpringBootApplication is a meta-annotation that
+combines @Configuration, @ComponentScan, and @EnableAutoConfiguration.
+
+So, when Spring Boot encounters @SpringBootApplication, it automatically triggers component scanning. It looks for
+classes annotated with stereotypes like @Component, @Service, @Repository, or @Controller, and registers them as beans
+in the Spring application context.
+
+
+
+
+
+
+
+Autowiring is a feature of the Spring Framework that allows Spring to automatically inject dependencies into Spring-
+managed beans. With autowiring, Spring automatically resolves the dependencies of a bean by inspecting its dependencies
+and matching them with other beans available in the Spring container.
+
+In essence, autowiring is a mechanism by which Spring performs dependency injection. It simplifies the process of wiring
+beans together by eliminating the need for explicit configuration of dependencies in XML or Java configuration files.
+However, it's important to note that dependency injection can also be achieved manually without using autowiring, by
+explicitly configuring beans and their dependencies in configuration files.
+
+
